@@ -1,10 +1,10 @@
 SQL injection is a type of cyberattack where malicious SQL code is inserted into a query in order to manipulate a database. This vulnerability typically occurs when user inputs are improperly validated or sanitized, allowing an attacker to execute arbitrary SQL commands.
 
 ## why it can be used ?
-=> Bypass Authentication mechanism
-=> Retrieve Sensitive information
-=> Alter or Delete datas.
-=> Take control of the databases.
+- Bypass Authentication mechanism
+- Retrieve Sensitive information
+- Alter or Delete datas.
+- Take control of the databases.
 
 
 ## how to detect SQL injection Vulnerabilities ?
