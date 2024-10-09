@@ -55,3 +55,30 @@ you can see in the above query , the query will check for the product with Gifts
 
 ### Login  Bypass using SQL injection :
 
+![login image](Images/login.png)
+
+you can see how login Authenication in the system. Attacker manipulate the whole query by sending payloads as a username or password. 
+
+authentication logic using SQL:
+```
+SELECT * FROM users WHERE username = '' AND password = '' ;
+```
+
+Payloads :
+```
+' OR 1=1 --
+```
+
+Manipulated Query :
+```
+SELECT * FROM users WHERE username = '' OR 1=1 --' AND password = '' ;
+
+```
+
+The manipulated query above checks if the username is empty or if 1=1. Since 1=1 is always true, according to Boolean logic, if one condition is true, the entire expression will evaluate to true, allowing the user to log in. you can search the payload online or can be ask to chatgpt.
+
+
+
+
+
+
